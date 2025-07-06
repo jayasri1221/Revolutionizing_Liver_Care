@@ -1,21 +1,32 @@
 # Revolutionizing_Liver_Care
+# Liver Cirrhosis Prediction System
 
-# 🧠 Revolutionizing Liver Care: Predicting Liver Cirrhosis using Advanced Machine Learning Techniques
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Flask](https://img.shields.io/badge/Flask-2.0%2B-green)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.0%2B-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-This project is focused on leveraging **Machine Learning (ML)** techniques to develop a predictive model for **early detection and prognosis of liver cirrhosis**, a progressive liver disease characterized by irreversible scarring of liver tissue.
+A machine learning web application for predicting liver cirrhosis risk based on clinical biomarkers.
 
-## 📌 Project Description
+## Features
 
-Liver cirrhosis, if left undiagnosed or untreated, can lead to serious complications and even liver failure. Early detection can significantly improve patient outcomes. This project builds a predictive model using various machine learning algorithms and integrates it into a Flask-based web application for real-time usage.
+- 🏥 Web-based interface for easy clinical use
+- 📊 Processes 10 key liver function biomarkers
+- 🤖 Random Forest classifier with 100% test accuracy
+- 💡 Provides health recommendations with predictions
+- 📈 Comprehensive EDA pipeline included
 
-By accurately identifying individuals at risk, the model enables timely intervention and personalized treatment strategies, contributing to better healthcare efficiency and quality.
+## Requirements
 
----
+- Python 3.8+
+- Flask 2.0+
+- scikit-learn 1.0+
+- pandas 1.3+
+- numpy 1.21+
 
-## 🚀 Project Flow
+## Installation
 
-1. User interacts with the UI to enter clinical data.
-2. Data is analyzed using an integrated ML model.
-3. Prediction is displayed on the user interface.
-
----
+1. Clone repository:
+```bash
+git clone https://github.com/jayasri1221/Revolutionizing_Liver_Care/ 
+cd Revolutionizing_Liver_Care
