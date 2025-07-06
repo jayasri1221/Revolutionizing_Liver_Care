@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liver Cirrhosis Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Liver Cirrhosis Predictor</h1>
+        <form action="/predict" method="post">
+            {% for feature in ['Age', 'Gender', 'Total Bilirubin    (mg/dl)', 'Direct    (mg/dl)',
+                'AL.Phosphatase      (U/L)', 'SGPT/ALT (U/L)', 'SGOT/AST      (U/L)',
+                'Total Protein     (g/dl)', 'Albumin   (g/dl)', 'A/G Ratio'] %}
+                <label for="{{ feature }}">{{ feature }}</label>
+                <input type="text" name="{{ feature }}" required>
+            {% endfor %}
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <div class="result">
+                <h2>Prediction Result:</h2>
+                <p>{{ prediction_text }}</p>
+                <p><strong>Confidence:</strong> {{ confidence }}</p>
+                <p><strong>Health Tip:</strong> {{ health_tip }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
